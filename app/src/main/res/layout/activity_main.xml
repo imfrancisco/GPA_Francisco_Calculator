@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textView_title"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            // 1st Class
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Enter 1st Class"
+                android:textSize="30sp" />
+
+            <EditText
+            android:id="@+id/EditText1_courseCredit"
+            android:textSize="30sp"
+            android:hint="Course Credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditText1_courseGrade"
+                android:textSize="30sp"
+                android:hint="Course Grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/Button_class1"
+                android:text="Add Course"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            // 2nd Class
+            <TextView
+                android:layout_marginVertical="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Enter 2nd Class"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/EditText2_courseCredit"
+                android:textSize="30sp"
+                android:hint="Course Credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditText2_courseGrade"
+                android:textSize="30sp"
+                android:hint="Course Grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/Button_class2"
+                android:text="Add Course"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            // 3rd Class
+            <TextView
+                android:layout_marginVertical="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Enter 3rd Class"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/EditText3_courseCredit"
+                android:textSize="30sp"
+                android:hint="Course Credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditText3_courseGrade"
+                android:textSize="30sp"
+                android:hint="Course Grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/Button_class3"
+                android:text="Add Course"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            // 4th Class
+            <TextView
+                android:layout_marginVertical="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Enter 4th Class"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/EditText4_courseCredit"
+                android:textSize="30sp"
+                android:hint="Course Credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditText4_courseGrade"
+                android:textSize="30sp"
+                android:hint="Course Grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/Button_class4"
+                android:text="Add Course"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            // 5th Class
+            <TextView
+                android:layout_marginVertical="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Enter 5th Class"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/EditText5_courseCredit"
+                android:textSize="30sp"
+                android:hint="Course Credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/EditText5_courseGrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Course Grade"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/Button_class5"
+                android:text="Add Course"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            // Compute GPA
+            <Button
+                android:id="@+id/Button_computeGPA"
+                android:layout_marginVertical="40dp"
+                android:text="Compute GPA"
+                android:textSize="40sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            // GPA Results
+            <TextView
+                android:id="@+id/textView_resultGPA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:hint="GPA Results"
+                android:gravity="center"
+                android:layout_marginVertical="30dp"/>
+
+            // ERASE BUTTON
+            <Button
+                android:id="@+id/Button_Erase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ERASE"
+                android:textSize="40sp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
