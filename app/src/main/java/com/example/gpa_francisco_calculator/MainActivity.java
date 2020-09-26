@@ -51,12 +51,22 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
+        
+        myTextView.setBackgroundColor(Color.WHITE);
         calculateGPA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Double result = count/totalCredit;
                 myTextView.setText("GPA Results: " + result);
+                if(result < 60){
+                    myTextView.setBackgroundColor(Color.RED);
+                }
+                else if(result >= 60 && result < 80){
+                    myTextView.setBackgroundColor(Color.YELLOW);
+                }
+                else if (result >= 80 && result <= 100){
+                    myTextView.setBackgroundColor(Color.GREEN);
+                }
             }
         });
 
